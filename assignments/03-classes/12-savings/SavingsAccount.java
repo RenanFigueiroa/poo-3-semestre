@@ -2,6 +2,10 @@ public class SavingsAccount {
     private double savingsBalance;
     private static double annualInterestRate;
 
+    public void setSavingsBalance(double savingsBalance) {
+        this.savingsBalance = savingsBalance;
+    }
+
     public SavingsAccount(double savingsBalance) {
         if (savingsBalance < 0.0) {
             throw new IllegalArgumentException("O saldo inicial não pode ser negativo.");
